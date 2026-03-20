@@ -1,0 +1,328 @@
+[
+  {
+    "id": "compresores",
+    "nombre": "Aceites para Compresores",
+    "descripcion": "Aceites minerales y de base sintética formulados para compresores de aire tipo pistón y tornillo.",
+    "caracteristicas": [
+      "Soportan temperaturas de descarga de 105°C hasta 150°C.",
+      "Vida útil extendida de 2000 a 6000 horas.",
+      "Disponibles en grados ISO 32, 46, 68, 100, 150 y 220."
+    ],
+    "modoDeUso": "Se aplican directamente en los sistemas de lubricación de compresores de aire según la recomendación del fabricante.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "grasas",
+    "nombre": "Grasas Industriales",
+    "descripcion": "Amplia variedad de grasas multipropósito, de complejo de litio y sulfonato de calcio para maquinaria y equipos industriales.",
+    "caracteristicas": [
+      "Contienen aditivos de extrema presión (EP).",
+      "Alta resistencia al lavado por agua y absorción de niveles moderados de agua.",
+      "Soportan altas temperaturas (hasta 200°C) y altas revoluciones."
+    ],
+    "modoDeUso": "Uso en cojinetes de motores eléctricos, engranajes abiertos, guías, bancadas y lubricación general de planta, tanto manual como por sistemas centralizados.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluidos-hidraulicos",
+    "nombre": "Fluidos Hidráulicos",
+    "descripcion": "Aceites minerales y sintéticos de alta pureza diseñados para sistemas hidráulicos y de servobomba.",
+    "caracteristicas": [
+      "Alto índice de viscosidad (+125 IV) y bases de alta pureza (99.9%).",
+      "Vida útil prolongada de 6,000 a 25,000 horas.",
+      "Cumplen con la normativa para aceites HLP."
+    ],
+    "modoDeUso": "Ideales para sistemas bomba-motor y servobombas donde se requieran aceites tipo HLP.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "guias-y-bancadas",
+    "nombre": "Guías y Bancadas",
+    "descripcion": "Aceites de gran adhesividad (tipo 'no salpicado') diseñados para la lubricación de guías lineales y de fricción.",
+    "caracteristicas": [
+      "Gran adhesividad y bajo coeficiente de fricción.",
+      "Disponibles en grados como ISO 32, 46, 68, 120 y 220.",
+      "Evitan el salpicado en operaciones rápidas."
+    ],
+    "modoDeUso": "Aplicación en guías de fricción de cierre en inyectoras y guías lineales en maquinaria CNC.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "aceite-proceso",
+    "nombre": "Aceites de Proceso",
+    "descripcion": "Aceites parafínicos y de proceso de grado técnico, formulados para las industrias química, del plástico, caucho y alimentaria.",
+    "caracteristicas": [
+      "Alta pureza mediante hidrocraqueado, eliminando azufre y compuestos polares.",
+      "No tóxicos (cumplen con FDA 21 CFR 178.36 para contacto indirecto con alimentos).",
+      "Excelentes propiedades como agente plastificante y desmoldante."
+    ],
+    "modoDeUso": "Se utilizan para mejorar la homogenización del batch en plásticos, lubricación textil, desmoldantes para cerámica y componentes en la fabricación de tintas y pinturas.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "electroerosion",
+    "nombre": "Fluidos para Electroerosión",
+    "descripcion": "Fluidos dieléctricos transparentes de baja viscosidad diseñados para procesos de electroerosión.",
+    "caracteristicas": [
+      "Baja viscosidad y color transparente.",
+      "Bajo porcentaje de azufre.",
+      "Larga vida útil (hasta 3 años)."
+    ],
+    "modoDeUso": "Se emplean en máquinas de electroerosión por penetración o hilo, especialmente para obtener acabados del tipo mate.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "aceites-sanitarios-blancos",
+    "nombre": "Aceites Sanitarios Blancos",
+    "descripcion": "Aceites blancos de grado alimenticio con agentes de adhesividad especial.",
+    "caracteristicas": [
+      "Ideales para la industria farmacéutica, agrícola y procesamiento de alimentos.",
+      "Reduce el goteo en aplicaciones mecánicas.",
+      "Funcionan como desmoldante y controlador de polvo."
+    ],
+    "modoDeUso": "Aplicación en cadenas, carriles, guías de deslizamiento, cables, bisagras y desmoldeo de equipos en zonas con riesgo de contacto alimentario.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluidos-hidraulicos-sanitarios",
+    "nombre": "Fluidos Hidráulicos Sanitarios",
+    "descripcion": "Lubricantes hidráulicos avanzados de grado alimenticio registrados bajo normas internacionales.",
+    "caracteristicas": [
+      "Registrados H1 por la NSF.",
+      "Cumplen con FDA 21 CFR 178.3570 para contacto accidental con alimentos.",
+      "Alta resistencia al desgaste."
+    ],
+    "modoDeUso": "Para sistemas hidráulicos ubicados en plantas de procesamiento de alimentos o áreas donde exista riesgo de contacto incidental con productos comestibles.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "engranajes-industriales-sanitarios",
+    "nombre": "Engranajes Industriales Sanitarios",
+    "descripcion": "Aceites minerales y sintéticos de grado alimenticio diseñados para la lubricación de engranajes cerrados.",
+    "caracteristicas": [
+      "Disponibles en variantes minerales y sintéticas.",
+      "Optimizados para engranajes tipo tornillo sin fin, helicoidales, cónicos y dientes rectos.",
+      "Cumplen con las normativas sanitarias."
+    ],
+    "modoDeUso": "Uso en cajas reductoras y transmisiones cerradas dentro de las líneas de envasado o producción alimentaria.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluido-para-compresores-de-aire-sanitarios",
+    "nombre": "Fluidos para Compresores Sanitarios",
+    "descripcion": "Aceites sintéticos y convencionales de grado sanitario para compresores de aire y bombas de vacío.",
+    "caracteristicas": [
+      "Cumplen norma FDA 21 CFR 178.3570.",
+      "Registrados H1 por la NSF.",
+      "Resistencia a la oxidación y alta durabilidad."
+    ],
+    "modoDeUso": "Lubricación de compresores de aire (rotativos o de pistón) y bombas de vacío que operan en instalaciones alimentarias.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluido-para-cadenas-sanitario",
+    "nombre": "Fluidos para Cadenas Sanitarios",
+    "descripcion": "Lubricantes sanitarios de alta adhesividad formulados para cadenas y cintas transportadoras.",
+    "caracteristicas": [
+      "Alta adhesividad que evita el escurrimiento.",
+      "Soportan temperaturas de operación de hasta 200°C.",
+      "Protección antidesgaste."
+    ],
+    "modoDeUso": "Se aplica en cadenas de transmisión y transporte expuestas a altas temperaturas en plantas alimenticias.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluido-para-transferencia-de-calor-sanitario",
+    "nombre": "Fluidos de Transferencia de Calor Sanitarios",
+    "descripcion": "Fluidos caloportadores de grado alimenticio para sistemas de transferencia térmica.",
+    "caracteristicas": [
+      "Capacidad de transferencia de calor hasta 320°C.",
+      "Disponible en viscosidad ISO 32.",
+      "Apto para sistemas cerrados y abiertos."
+    ],
+    "modoDeUso": "Utilizados en calderas de fluido térmico y sistemas de calentamiento en procesos de la industria alimentaria.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "grasas-sanitarias",
+    "nombre": "Grasas Sanitarias",
+    "descripcion": "Grasas convencionales y sintéticas de grado alimenticio para cargas ligeras a pesadas.",
+    "caracteristicas": [
+      "Fuerte resistencia al lavado por agua.",
+      "Contienen aditivos de extrema presión (EP).",
+      "Soportan altas temperaturas y cargas pesadas (versión sintética)."
+    ],
+    "modoDeUso": "Lubricación general de rodamientos, cojinetes y partes móviles en procesadoras de alimentos.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluidos-para-bombas-de-vacio",
+    "nombre": "Fluidos para Bombas de Vacío",
+    "descripcion": "Aceites especializados que refrigeran, lubrican y sellan bombas de vacío industriales.",
+    "caracteristicas": [
+      "Excelente resistencia a la degradación térmica.",
+      "Facilita el sellado en altas exigencias."
+    ],
+    "modoDeUso": "Se emplea en bombas de vacío de pistones y paletas rotativas.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "engranajes-industriales",
+    "nombre": "Engranajes Industriales",
+    "descripcion": "Lubricantes minerales y sintéticos premium para maquinaria pesada y engranajes cerrados.",
+    "caracteristicas": [
+      "Poseen aditivos de extrema presión (EP) y tipo azufre-fósforo.",
+      "Compatibles con norma Caterpillar Tractor TO-4.",
+      "Resistencia a la formación de espuma."
+    ],
+    "modoDeUso": "Lubricación de cajas de cambio, frenos húmedos, mandos finales y transmisiones powershift en maquinaria pesada e industrial.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "protector-de-metales",
+    "nombre": "Protectores de Metales",
+    "descripcion": "Aceites protectores especialmente formulados para prevenir la corrosión y el óxido.",
+    "caracteristicas": [
+      "Contienen aditivos avanzados anticorrosivos.",
+      "Disponibles en diversas viscosidades."
+    ],
+    "modoDeUso": "Aplicación superficial sobre piezas metálicas maquinadas, expuestas o en almacenamiento para prevenir su deterioro.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluido-para-transferencia-de-calor",
+    "nombre": "Fluidos de Transferencia de Calor",
+    "descripcion": "Aceites térmicos convencionales para el transporte seguro de calor en sistemas industriales.",
+    "caracteristicas": [
+      "Alta estabilidad térmica.",
+      "Capacidad para transferir calor hasta 320°C en sistemas cerrados."
+    ],
+    "modoDeUso": "Llenado de circuitos cerrados de transferencia de calor en procesos industriales no alimentarios.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "solubles",
+    "nombre": "Aceites Solubles",
+    "descripcion": "Aceites emulsionables semi-sintéticos para procesos de mecanizado de metales.",
+    "caracteristicas": [
+      "Alta durabilidad de emulsión (6 meses a un año).",
+      "Refrigeran y lubrican herramientas de corte."
+    ],
+    "modoDeUso": "Diluidos en agua para el mecanizado de aluminios, bronces, cobre y aceros de alta aleación.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "perforacion-neumatica",
+    "nombre": "Perforación Neumática",
+    "descripcion": "Lubricantes de alta adhesividad diseñados para soportar los impactos de herramientas neumáticas.",
+    "caracteristicas": [
+      "Formulación de alta adhesividad para evitar su expulsión por el aire.",
+      "Propiedades de extrema presión (EP)."
+    ],
+    "modoDeUso": "Lubricación de línea para martillos perforadores de roca y equipos neumáticos pesados.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "turbinas",
+    "nombre": "Aceites para Turbinas",
+    "descripcion": "Fluidos premium para sistemas de circulación y turbinas de alta exigencia.",
+    "caracteristicas": [
+      "Excelente protección contra la oxidación.",
+      "Adecuado para contacto con superficies de acero, bronce y plata."
+    ],
+    "modoDeUso": "Utilizados en transmisiones hidráulicas, husillos de alta velocidad y sistemas de circulación general.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "antiseize",
+    "nombre": "Compuestos Antiseize (Antiadherentes)",
+    "descripcion": "Compuestos protectores y antiadherentes basados en cobre, níquel, aluminio, grafito y PTFE para roscas y piezas a temperaturas extremas.",
+    "caracteristicas": [
+      "Soportan temperaturas críticas desde 982°C hasta 1426°C.",
+      "Superan las especificaciones MIL-A-907.",
+      "Soportan cargas extremas y evitan la soldadura en frío."
+    ],
+    "modoDeUso": "Aplicación en roscas, pernos y uniones metálicas para evitar el agarrotamiento, facilitar el montaje/desmontaje y proteger contra la corrosión en condiciones severas.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "moly-spray",
+    "nombre": "Lubricantes Moly y Sprays de Película Seca",
+    "descripcion": "Lubricantes concentrados de bisulfuro de molibdeno que forman películas secas para fricciones extremas.",
+    "caracteristicas": [
+      "Resisten altas cargas (hasta +100,000 PSI) y temperaturas de hasta 1426°C.",
+      "No son aceitosos ni pegajosos; no gotean ni se corren.",
+      "Bajo coeficiente de fricción y resistencia a la corrosión."
+    ],
+    "modoDeUso": "Rociado o aplicado directamente en engranajes y piezas deslizantes donde los lubricantes convencionales son expulsados por la presión.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "fluidos-penetrantes",
+    "nombre": "Fluidos Penetrantes",
+    "descripcion": "Penetrantes industriales de servicio pesado diseñados para liberar piezas atascadas.",
+    "caracteristicas": [
+      "Acción capilar extrema.",
+      "Penetra eficazmente a través de óxido, sarro y corrosión fuertemente incrustados."
+    ],
+    "modoDeUso": "Rociado sobre tuercas, pernos y mecanismos oxidados o atascados para aflojarlos antes del mantenimiento.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "chain-and-cable",
+    "nombre": "Lubricantes para Cadenas y Cables",
+    "descripcion": "Lubricantes espumosos para servicio pesado con bisulfuro de molibdeno.",
+    "caracteristicas": [
+      "La espuma penetra profundamente en el núcleo del cable o pasador de la cadena.",
+      "Deja una película protectora no gomosa y altamente adherente."
+    ],
+    "modoDeUso": "Pulverización sobre cables de acero, polipastos y cadenas de transmisión sometidas a la intemperie o servicio pesado.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "open-gear-lube",
+    "nombre": "Lubricantes para Engranajes Abiertos",
+    "descripcion": "Lubricantes altamente adherentes de secado rápido formulados para engranajes expuestos.",
+    "caracteristicas": [
+      "Secado rápido que evita la contaminación por polvo y tierra.",
+      "No gotea y es altamente resistente a condiciones de agua."
+    ],
+    "modoDeUso": "Pulverizado directo sobre engranajes abiertos, coronas y piñones de molinos o grúas industriales.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "siliconas",
+    "nombre": "Lubricantes de Silicona",
+    "descripcion": "Grasas y sprays de silicona pura (con opciones grado alimenticio y reforzadas con PTFE).",
+    "caracteristicas": [
+      "Inodoros, incoloros y no dejan manchas.",
+      "Alta resistencia dieléctrica y térmica (desde -40°C hasta 232°C).",
+      "Cumplen los requisitos de la FDA y USDA H-1 (versiones alimenticias)."
+    ],
+    "modoDeUso": "Ideales como agentes desmoldantes, lubricación seca de rieles, lubricación de componentes eléctricos y plásticos.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "food-machinery-lube",
+    "nombre": "Lubricantes de Maquinaria de Alimentos",
+    "descripcion": "Grasas y aceites blancos diseñados exclusivamente para el sector de procesamiento de alimentos y drogas.",
+    "caracteristicas": [
+      "Clasificación USDA H-1 y cumplimiento de normas FDA 172.878 y 178.3620.",
+      "Rango de operación térmica amplio (-12°C a 243°C)."
+    ],
+    "modoDeUso": "Se utilizan en rodamientos, guías y cadenas donde pueda existir un contacto incidental del lubricante con los alimentos.",
+    "imagen": "/product.webp"
+  },
+  {
+    "id": "metal-parts-protector",
+    "nombre": "Protectores de Partes Metálicas",
+    "descripcion": "Agentes anticorrosivos de película para el almacenamiento prolongado de piezas.",
+    "caracteristicas": [
+      "Evitan el óxido y la corrosión ambiental.",
+      "Ofrecen protección en almacenamiento continuo de hasta 24 meses.",
+      "Removibles fácilmente con solventes."
+    ],
+    "modoDeUso": "Se aplica cubriendo las piezas metálicas, matrices o repuestos mecanizados antes de guardarlos en almacén o enviarlos por transporte marítimo.",
+    "imagen": "/product.webp"
+  }
+]

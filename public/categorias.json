@@ -1,0 +1,172 @@
+[
+  {
+    "categoria": "Fluidos Hidráulicos",
+    "alias": "fluidos-hidraulicos",
+    "img_src": "/categories/hidraulica.jpg",
+    "id": 1
+  },
+  {
+    "categoria": "grasas",
+    "alias": "grasas",
+    "img_src": "/categories/grasas2.jpg",
+    "id": 2
+  },
+  {
+    "categoria": "aceites de compresores",
+    "alias": "compresores",
+    "img_src": "/categories/compresora.jpg",
+    "id": 3
+  },
+  {
+    "categoria": "aceites de proceso",
+    "alias": "aceite-proceso",
+    "img_src": "/categories/procesos.jpg  ",
+    "id": 4
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "electroerosion",
+    "img_src": "/categories/electro.jpg",
+    "id": 5
+  },
+
+  {
+    "categoria": "electroerosión",
+    "alias": "guias-y-bancadas",
+    "img_src": "/categories/guias_lineales.jpg",
+    "id": 5
+  },
+
+  {
+    "categoria": "electroerosión",
+    "alias": "engranajes-industriales",
+    "img_src": "/categories/engranajes.jpeg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "protector-de-metales",
+    "img_src": "/categories/protector_metaless.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "fluido-para-transferencia-de-calor",
+    "img_src": "/categories/transferencia_calor.jpeg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "solubles",
+    "img_src": "/categories/aceite_solubles.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "perforacion-neumatica",
+    "img_src": "/categories/perforacion_neumatica.webp",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "turbinas",
+    "img_src": "/categories/turbina_hidraulica.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "fluidos-hidraulicos-sanitarios",
+    "img_src": "/categories/hidraulico_sani.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "fluido-para-cadenas-sanitario",
+    "img_src": "/categories/cadenas_sanitarias.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "aceites-sanitarios-blancos",
+    "img_src": "/categories/sanitario_blanco.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "fluido-para-compresores-de-aire-sanitarios",
+    "img_src": "/categories/compresores_sanitario.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "engranajes-industriales-sanitarios",
+    "img_src": "/categories/engranaje_sanitario.webp",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "fluido-para-transferencia-de-calor-sanitario",
+    "img_src": "/categories/transferencia_sanitario.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "grasas-sanitarias",
+    "img_src": "/categories/grasa_sanitaria.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "fluidos-para-bombas-de-vacio",
+    "img_src": "/categories/bomba_vacio_industrial.jpeg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "antiseize",
+    "img_src": "/categories/antic.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "moly-spray",
+    "img_src": "/categories/moly-spray.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "fluidos-penetrantes",
+    "img_src": "/categories/fluido-p.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "chain-and-cable",
+    "img_src": "/categories/chaincable.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "open-gear-lube",
+    "img_src": "/categories/gearlube.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "siliconas",
+    "img_src": "/categories/silicona.webp",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "food-machinery-lube",
+    "img_src": "/categories/foodma.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "",
+    "alias": "metal-parts-protector",
+    "img_src": "/categories/protector.jpg",
+    "id": 5
+  }
+]

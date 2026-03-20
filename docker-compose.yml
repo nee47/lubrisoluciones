@@ -1,0 +1,32 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lubrisoluciones-web
+    restart: unless-stopped
+
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+
+    networks:
+      - traefik
+
+    labels:
+      - "traefik.enable=true"
+
+      # Router
+      - "traefik.http.routers.lubrisoluciones.rule=Host(`lubrisoluciones.devmotec.com`)"
+      - "traefik.http.routers.lubrisoluciones.entrypoints=web,websecure"
+      - "traefik.http.routers.lubrisoluciones.tls=true"
+      - "traefik.http.routers.lubrisoluciones.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.lubrisoluciones.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+
+      # Service (internal port)
+      - "traefik.http.services.lubrisoluciones.loadbalancer.server.port=3000"
+
+networks:
+  traefik:
+    external: true
