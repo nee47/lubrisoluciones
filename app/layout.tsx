@@ -7,8 +7,9 @@ import Footer from "../components/Footer";
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata: Metadata = {
-  title: "Lubrisoluciones - Soluciones en lubricación industrial",
-  description: "Ventas de lubricantes y grasas industriales.",
+  title: "Lubrisoluciones - Soluciones en lubricación industrial en Peru",
+  description:
+    "Ventas de lubricantes y grasas industriales en peru Lima y provincias.",
 };
 
 export default function RootLayout({
