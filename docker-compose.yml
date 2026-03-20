@@ -20,7 +20,7 @@ services:
       - "traefik.http.routers.lubrisoluciones.rule=Host(`lubrisoluciones.devmotec.com`)"
       - "traefik.http.routers.lubrisoluciones.entrypoints=web,websecure"
       - "traefik.http.routers.lubrisoluciones.tls=true"
-      - "traefik.http.routers.lubrisoluciones.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.lubrisoluciones.tls.certresolver=myresolver"
       - "traefik.http.routers.lubrisoluciones.middlewares=redirect-to-https"
       - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
 
