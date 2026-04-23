@@ -8,13 +8,11 @@ export default function CoreServices() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-bold font-headline mb-6 tracking-tight text-white text-balance">
-              Precisión Técnica. <br />
-              <span className="text-primary">Responsabilidad Operativa.</span>
+              Servicios de <br />
+              <span className="text-primary">Lubricación Industrial</span>
             </h2>
             <p className="text-on-surface-variant text-lg text-balance">
-              Nuestras operaciones centrales aprovechan el marco del Ecosistema
-              Cinético para equilibrar el rendimiento industrial con la
-              sustentabilidad medioambiental.
+              Optimizamos el rendimiento de su maquinaria pesada con aceites, grasas y fluidos de alta tecnología, adaptados a la exigente geografía del Perú.
             </p>
           </div>
         </div>
@@ -51,7 +49,7 @@ export default function CoreServices() {
             <div className="absolute right-0 bottom-0 w-1/2 h-full opacity-20 grayscale group-hover:grayscale-0 group-hover:opacity-40 transition-all z-0">
               <Image
                 src="/image.webp"
-                alt="High tech industrial gear set"
+                alt="Engranajes industriales de alta tecnología - Lubricación"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 unoptimized
@@ -124,7 +122,7 @@ export default function CoreServices() {
             <div className="w-full md:w-1/3 aspect-square bg-black rounded-xl overflow-hidden flex items-center justify-center border border-white/5 relative">
               <Image
                 src="/mundo.webp"
-                alt="Digital monitoring dashboard"
+                alt="Monitoreo y análisis de aceite industrial en Perú"
                 fill
                 unoptimized
                 className="object-cover opacity-60"

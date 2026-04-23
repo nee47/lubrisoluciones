@@ -1,5 +1,11 @@
-"use client";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacto | Venta de Lubricantes Industriales en Lima, Perú",
+  description:
+    "Contacte a LUBRISOLUCIONES. Distribuidores de grasas, aceites y lubricantes para maquinaria industrial en Lima y provincias de Perú.",
+};
 
 export default function ContactoPage() {
   return (
@@ -89,7 +95,26 @@ export default function ContactoPage() {
                           Email
                         </h4>
                         <p className="text-on-surface-variant text-lg leading-relaxed">
-                          oilxxfm@yahoo.es
+                          lubrisoluciones@yahoo.com
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-6 group">
+                      <div className="bg-surface-variant p-4 rounded-xl border border-white/5 group-hover:border-primary/50 transition-colors">
+                        <span
+                          className="material-symbols-outlined text-primary text-3xl"
+                          style={{ fontVariationSettings: "'FILL' 1" }}
+                        >
+                          manage_search
+                        </span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-2">
+                          RUC
+                        </h4>
+                        <p className="text-on-surface-variant text-lg leading-relaxed">
+                          20612884197
                         </p>
                       </div>
                     </div>

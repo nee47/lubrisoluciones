@@ -11,7 +11,7 @@ export default function CTASection() {
           <div className="relative z-10 max-w-3xl">
             <h2 className="text-4xl md:text-6xl font-black font-headline text-white mb-8 tracking-tighter text-balance">
               ¿Listo para cambiar <br className="hidden md:block" />
-              <span className="text-primary">el paradigma de fricción?</span>
+              <span className="text-primary">el paradigma de Lubricación?</span>
             </h2>
             <p className="text-on-primary-container/80 text-xl mb-12 text-balance leading-relaxed">
               Únase a Lubrisoluciones para forjar una base operativa robusta,
@@ -19,16 +19,18 @@ export default function CTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
+                id="btn-cta-contacto"
                 href="/contacto"
                 className="bg-primary text-white px-12 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20"
               >
                 Asóciate con Nosotros
               </Link>
               <Link
-                href="/contacto"
+                id="btn-cta-productos"
+                href="/productos"
                 className="border-2 border-secondary text-secondary px-12 py-5 rounded-xl font-bold text-lg hover:bg-secondary/10 transition-colors"
               >
-                Programar Asesoría
+                Conocer Productos
               </Link>
             </div>
           </div>

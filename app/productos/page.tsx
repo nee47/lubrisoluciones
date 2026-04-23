@@ -17,7 +17,7 @@ export default function ProductosPage() {
         <div className="container mx-auto px-6 lg:px-8 max-w-screen-2xl relative z-10">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-black font-headline text-white tracking-tighter text-balance mb-6">
-              Matriz de <span className="text-primary">Soluciones</span>
+              Inventario de <span className="text-primary">Productos</span>
             </h1>
             <p className="text-xl text-on-surface-variant max-w-3xl leading-relaxed text-balance">
               Formulaciones operativas de alto rango diseñadas para

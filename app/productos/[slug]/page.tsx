@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import { getProductos, getProductoBySlug } from "../../../lib/productos";
 
 interface PageProps {
@@ -20,8 +21,13 @@ export async function generateMetadata({ params }: PageProps) {
   if (!producto) return { title: "Producto no encontrado" };
 
   return {
-    title: `${producto.nombre} - LUBRISOLUCIONES`,
-    description: producto.descripcion.substring(0, 160),
+    title: `${producto.nombre} en Perú`,
+    description: `Distribuidores de ${producto.nombre.toLowerCase()} en Lima y provincias. ${producto.descripcion.substring(0, 120)}`,
+    openGraph: {
+      title: `${producto.nombre} | LUBRISOLUCIONES Perú`,
+      description: `Distribuidores de ${producto.nombre.toLowerCase()} en Lima y provincias. ${producto.descripcion.substring(0, 120)}`,
+      url: `https://lubrisoluciones.devmotec.com/productos/${producto.id}`,
+    }
   };
 }
 
@@ -43,7 +49,7 @@ export default async function ProductoDetalle({ params }: PageProps) {
           <span className="material-symbols-outlined mr-2 group-hover:-translate-x-1 transition-transform">
             arrow_back
           </span>
-          Retornar a Matriz
+          Volver
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -53,7 +59,7 @@ export default async function ProductoDetalle({ params }: PageProps) {
             {producto.imagen ? (
               <Image
                 src={producto.imagen}
-                alt={producto.nombre}
+                alt={`${producto.nombre} - Lubricantes Industriales LUBRISOLUCIONES Perú`}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover z-10 transition-transform duration-500 group-hover:scale-105"
@@ -115,6 +121,7 @@ export default async function ProductoDetalle({ params }: PageProps) {
 
             <div className="pt-4">
               <a
+                id="btn-producto-solicitar"
                 href={`https://wa.me/51961484883?text=${encodeURIComponent(`Hola, quisiera más información y precios sobre el producto ${producto.nombre}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -127,6 +134,29 @@ export default async function ProductoDetalle({ params }: PageProps) {
           </div>
         </div>
       </div>
+      <Script id={`product-schema-${producto.id}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "${producto.nombre}",
+          "image": "https://lubrisoluciones.devmotec.com${producto.imagen || '/product.webp'}",
+          "description": "${producto.descripcion}",
+          "brand": {
+            "@type": "Brand",
+            "name": "LUBRISOLUCIONES"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://lubrisoluciones.devmotec.com/productos/${producto.id}",
+            "priceCurrency": "PEN",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "LUBRISOLUCIONES"
+            }
+          }
+        }
+      `}} />
     </div>
   );
 }

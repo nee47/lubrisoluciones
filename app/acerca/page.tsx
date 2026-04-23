@@ -33,8 +33,8 @@ export default function AcercaPage() {
             {/* Story section */}
             <div className="max-w-4xl">
               <h2 className="text-4xl md:text-5xl font-bold font-headline text-white mb-10 tracking-tight">
-                Evolución <br />
-                <span className="text-secondary">Operativa</span>
+                Evolución
+                <span className="text-secondary"> Operativa</span>
               </h2>
               <div className="space-y-6 text-on-surface-variant text-xl leading-relaxed text-balance">
                 <p>

@@ -71,6 +71,7 @@ export default function Navbar() {
             bolt
           </span>
           <a
+            id="btn-nav-cotizar-desktop"
             href={`https://wa.me/51961484883?text=${encodeURIComponent(`Hola vi su web LUBRISOLUCIONES, quisiera más información y precios.`)}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -108,6 +109,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
+            id="btn-nav-cotizar-mobile"
             href={`https://wa.me/51961484883?text=${encodeURIComponent(`Hola vi su web LUBRISOLUCIONES, quisiera más información y precios.`)}`}
             target="_blank"
             rel="noopener noreferrer"
