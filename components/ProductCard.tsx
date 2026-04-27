@@ -53,11 +53,12 @@ export default function ProductCard({ producto }: { producto: Producto }) {
       <div className="absolute top-0 inset-x-0 h-32 bg-primary/5 group-hover:bg-primary/20 blur-3xl transition-colors duration-500 z-0"></div>
 
       {/* Image Area */}
-      <div className="relative w-full h-48 overflow-hidden z-10 p-4">
+      <div className="relative w-full h-82 overflow-hidden z-10 p-4">
         <Image
-          src="/barril.webp"
+          src="/lubri_cilinder.webp"
           alt="imagen referencial"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className=" object-cover"
           unoptimized
           fill
         ></Image>

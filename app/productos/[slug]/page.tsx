@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
       title: `${producto.nombre} | LUBRISOLUCIONES Perú`,
       description: `Distribuidores de ${producto.nombre.toLowerCase()} en Lima y provincias. ${producto.descripcion.substring(0, 120)}`,
       url: `https://lubrisoluciones.devmotec.com/productos/${producto.id}`,
-    }
+    },
   };
 }
 
@@ -134,12 +134,16 @@ export default async function ProductoDetalle({ params }: PageProps) {
           </div>
         </div>
       </div>
-      <Script id={`product-schema-${producto.id}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+      <Script
+        id={`product-schema-${producto.id}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `
         {
           "@context": "https://schema.org/",
           "@type": "Product",
           "name": "${producto.nombre}",
-          "image": "https://lubrisoluciones.devmotec.com${producto.imagen || '/product.webp'}",
+          "image": "https://lubrisoluciones.devmotec.com${producto.imagen || "/bucket.webp"}",
           "description": "${producto.descripcion}",
           "brand": {
             "@type": "Brand",
@@ -156,7 +160,9 @@ export default async function ProductoDetalle({ params }: PageProps) {
             }
           }
         }
-      `}} />
+      `,
+        }}
+      />
     </div>
   );
 }
