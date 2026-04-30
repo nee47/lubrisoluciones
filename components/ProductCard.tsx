@@ -55,7 +55,7 @@ export default function ProductCard({ producto }: { producto: Producto }) {
       {/* Image Area */}
       <div className="relative w-full h-82 overflow-hidden z-10 p-4">
         <Image
-          src="/lubri_cilinder.webp"
+          src="/lubri_ci.webp"
           alt="imagen referencial"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className=" object-cover"
