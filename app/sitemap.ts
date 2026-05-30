@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getProductos } from '../lib/productos'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://lubrisoluciones.devmotec.com'
+  const baseUrl = 'https://lubrisoluciones.com'
 
   const productos = getProductos()
   

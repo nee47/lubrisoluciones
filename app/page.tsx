@@ -18,7 +18,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "LUBRISOLUCIONES",
-            "image": "https://lubrisoluciones.devmotec.com/image.webp",
+            "image": "https://lubrisoluciones.com/image.webp",
             "description": "Venta y distribución de lubricantes, aceites, y grasas industriales en Lima y provincias del Perú.",
             "address": {
               "@type": "PostalAddress",
@@ -28,7 +28,7 @@ export default function Home() {
               "addressCountry": "PE"
             },
             "telephone": "+51961484883",
-            "url": "https://lubrisoluciones.devmotec.com",
+            "url": "https://lubrisoluciones.com",
             "priceRange": "$$"
           }
         `}

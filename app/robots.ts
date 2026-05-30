@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://lubrisoluciones.devmotec.com/sitemap.xml',
+    sitemap: 'https://lubrisoluciones.com/sitemap.xml',
   }
 }

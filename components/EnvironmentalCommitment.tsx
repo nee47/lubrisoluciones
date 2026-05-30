@@ -40,11 +40,13 @@ export default function EnvironmentalCommitment() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2 text-white">
-                    Fluidos Biodegradables
+                    Fluidos API GRUPO III
                   </h4>
                   <p className="text-on-surface-variant">
-                    Línea especializada de lubricantes formulados con bases que
-                    protegen el medio ambiente.
+                    Bases altamente refinadas mediante hidrocraqueo severo.
+                    Logrando alta pureza 99.9%. Azufre menos de 0.03% por lo
+                    cual se le considera bases sinteticas derivadas del
+                    patroleo.
                   </p>
                 </div>
               </div>

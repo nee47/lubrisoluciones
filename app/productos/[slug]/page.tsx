@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title: `${producto.nombre} | LUBRISOLUCIONES Perú`,
       description: `Distribuidores de ${producto.nombre.toLowerCase()} en Lima y provincias. ${producto.descripcion.substring(0, 120)}`,
-      url: `https://lubrisoluciones.devmotec.com/productos/${producto.id}`,
+      url: `https://lubrisoluciones.com/productos/${producto.id}`,
     },
   };
 }
@@ -143,7 +143,7 @@ export default async function ProductoDetalle({ params }: PageProps) {
           "@context": "https://schema.org/",
           "@type": "Product",
           "name": "${producto.nombre}",
-          "image": "https://lubrisoluciones.devmotec.com${producto.imagen || "/bucket.webp"}",
+          "image": "https://lubrisoluciones.com${producto.imagen || "/bucket.webp"}",
           "description": "${producto.descripcion}",
           "brand": {
             "@type": "Brand",
@@ -151,7 +151,7 @@ export default async function ProductoDetalle({ params }: PageProps) {
           },
           "offers": {
             "@type": "Offer",
-            "url": "https://lubrisoluciones.devmotec.com/productos/${producto.id}",
+            "url": "https://lubrisoluciones.com/productos/${producto.id}",
             "priceCurrency": "PEN",
             "availability": "https://schema.org/InStock",
             "seller": {

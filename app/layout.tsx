@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LUBRISOLUCIONES | Lubricantes y Grasas Industriales en Perú",
     description: "Venta y distribución de lubricantes, aceites, y grasas industriales para maquinaria pesada en Lima y todo el Perú.",
-    url: "https://lubrisoluciones.devmotec.com",
+    url: "https://lubrisoluciones.com",
     siteName: "LUBRISOLUCIONES",
     locale: "es_PE",
     type: "website",
