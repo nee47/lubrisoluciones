@@ -2,85 +2,63 @@ import Link from "next/link";
 import { Producto } from "../lib/productos";
 import Image from "next/image";
 
-const getPlaceholder = (id: string) => {
-  const hash = id.length % 3;
-  if (hash === 0) {
-    return (
-      <div className="w-full h-full bg-surface-variant flex items-center justify-center border border-white/5">
-        <span
-          className="material-symbols-outlined text-primary text-6xl opacity-60"
-          style={{ fontVariationSettings: "'FILL' 0" }}
-        >
-          settings
-        </span>
-      </div>
-    );
-  }
-  if (hash === 1) {
-    return (
-      <div className="w-full h-full bg-surface-variant flex items-center justify-center border border-white/5">
-        <span
-          className="material-symbols-outlined text-secondary text-6xl opacity-60"
-          style={{ fontVariationSettings: "'FILL' 0" }}
-        >
-          water_drop
-        </span>
-      </div>
-    );
-  }
-  return (
-    <div className="w-full h-full bg-surface-variant flex items-center justify-center border border-white/5 gap-2">
-      <span
-        className="material-symbols-outlined text-primary text-5xl opacity-50"
-        style={{ fontVariationSettings: "'FILL' 0" }}
-      >
-        water_drop
-      </span>
-      <span
-        className="material-symbols-outlined text-secondary text-5xl opacity-50"
-        style={{ fontVariationSettings: "'FILL' 0" }}
-      >
-        settings
-      </span>
-    </div>
-  );
-};
-
 export default function ProductCard({ producto }: { producto: Producto }) {
+  const displayImage = producto.imagen || "/bucket.webp";
+  const highlightedFeatures = producto.caracteristicas?.slice(0, 2) || [];
+
   return (
-    <div className="bg-surface rounded-2xl border border-white/5 overflow-hidden hover:ring-2 hover:ring-primary/50 transition-all duration-300 group flex flex-col h-full relative  shadow-xl shadow-black/50">
+    <article className="group relative flex flex-col h-full rounded-2xl border border-white/10 bg-surface/70 overflow-hidden shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-2xl hover:shadow-black/60">
       {/* Top ambient glow */}
-      <div className="absolute top-0 inset-x-0 h-32 bg-primary/5 group-hover:bg-primary/20 blur-3xl transition-colors duration-500 z-0"></div>
+      <div className="absolute top-0 inset-x-0 h-28 bg-primary/5 group-hover:bg-primary/15 blur-2xl transition-colors duration-500 pointer-events-none" />
 
       {/* Image Area */}
-      <div className="relative w-full h-82 overflow-hidden z-10 p-4">
+      <div className="relative w-full h-52 overflow-hidden bg-black/40 p-4 border-b border-white/5">
         <Image
-          src="/lubri_ci.webp"
-          alt="imagen referencial"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className=" object-cover"
-          unoptimized
+          src={displayImage}
+          alt={`${producto.nombre} - Lubricante Industrial`}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
           fill
-        ></Image>
+        />
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col flex-grow z-10">
-        <h3 className="text-xl font-bold font-headline text-white mb-2 line-clamp-2">
+      <div className="flex flex-col flex-grow p-5 sm:p-6 z-10">
+        {/* Title */}
+        <h3 className="text-lg font-bold font-headline text-white mb-2 line-clamp-1 group-hover:text-primary transition-colors duration-200">
           {producto.nombre}
         </h3>
-        <p className="text-on-surface-variant text-sm mb-6 flex-grow line-clamp-3 leading-relaxed">
+
+        {/* Short Description */}
+        <p className="text-xs text-on-surface-variant line-clamp-2 leading-relaxed mb-4 flex-grow">
           {producto.descripcion}
         </p>
 
-        {/* Action */}
+        {/* Technical Highlights / Features */}
+        {highlightedFeatures.length > 0 && (
+          <div className="space-y-1.5 mb-5 border-t border-white/5 pt-3">
+            {highlightedFeatures.map((feat, idx) => (
+              <div key={idx} className="flex items-start gap-2 text-[11px] text-white/80">
+                <span className="material-symbols-outlined text-primary text-sm shrink-0 mt-0.5">
+                  check
+                </span>
+                <span className="line-clamp-1">{feat}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Action Button */}
         <Link
           href={`/productos/${producto.id}`}
-          className="mt-auto block text-center font-bold py-3 px-4 rounded-xl bg-surface-variant text-primary border border-white/5 group-hover:bg-primary group-hover:text-white transition-colors duration-300"
+          className="mt-auto flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-surface-variant/80 text-xs font-bold text-white border border-white/10 transition-all duration-300 hover:bg-primary hover:border-primary active:scale-[0.98]"
         >
-          Ver detalles
+          <span>Ver ficha técnica</span>
+          <span className="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">
+            arrow_forward
+          </span>
         </Link>
       </div>
-    </div>
+    </article>
   );
 }

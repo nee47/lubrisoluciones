@@ -3,29 +3,75 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lubrisoluciones.com"),
   title: {
     default: "LUBRISOLUCIONES | Lubricantes y Grasas Industriales en Perú",
-    template: "%s | LUBRISOLUCIONES"
+    template: "%s | LUBRISOLUCIONES",
   },
-  description: "Venta y distribución de lubricantes, aceites, y grasas industriales para maquinaria pesada en Lima y todo el Perú. Soluciones de lubricación de ultra precisión.",
-  keywords: ["lubricantes industriales", "grasas para maquinaria", "aceites industriales Perú", "venta de lubricantes Lima", "lubricación de precisión"],
+  description:
+    "Distribución de lubricantes, aceites sintéticos, y grasas de extrema presión para maquinaria pesada en Lima y todo el Perú. Asesoría de ingeniería y despacho nacional.",
+  keywords: [
+    "lubricantes industriales",
+    "grasas para maquinaria",
+    "aceites industriales Perú",
+    "venta de lubricantes Lima",
+    "lubricación de precisión",
+    "aceites sintéticos",
+    "lubricantes grado alimentario NSF H1",
+    "grasas extrema presión EP",
+  ],
+  authors: [{ name: "LUBRISOLUCIONES" }],
+  creator: "LUBRISOLUCIONES",
+  publisher: "LUBRISOLUCIONES",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "LUBRISOLUCIONES | Lubricantes y Grasas Industriales en Perú",
-    description: "Venta y distribución de lubricantes, aceites, y grasas industriales para maquinaria pesada en Lima y todo el Perú.",
+    description:
+      "Venta y distribución de lubricantes, aceites, y grasas industriales para maquinaria pesada en Lima y todo el Perú.",
     url: "https://lubrisoluciones.com",
     siteName: "LUBRISOLUCIONES",
     locale: "es_PE",
     type: "website",
+    images: [
+      {
+        url: "/image.webp",
+        width: 1200,
+        height: 630,
+        alt: "LUBRISOLUCIONES - Lubricantes Industriales en Perú",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LUBRISOLUCIONES | Lubricantes y Grasas Industriales en Perú",
+    description:
+      "Distribución de aceites y grasas industriales de alto rendimiento en Lima y provincias.",
+    images: ["/image.webp"],
   },
   robots: {
     index: true,
     follow: true,
-  }
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -47,6 +93,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-grow flex flex-col">{children}</main>
         <Footer />
+        <WhatsAppButton />
         <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_OD!} />
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID!} />
       </body>

@@ -65,23 +65,10 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA Area & Mobile Toggle */}
-        <div className="flex items-center gap-4">
-          <span className="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform hidden sm:block">
-            bolt
-          </span>
-          <a
-            id="btn-nav-cotizar-desktop"
-            href={`https://wa.me/51961484883?text=${encodeURIComponent(`Hola vi su web LUBRISOLUCIONES, quisiera más información y precios.`)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-flex bg-primary hover:bg-primary-dim text-white px-6 py-2 rounded-lg font-bold transition-all active:scale-95"
-          >
-            Cotizar
-          </a>
-
+        {/* Mobile Toggle */}
+        <div className="flex md:hidden items-center">
           <button
-            className="md:hidden text-primary p-2 focus:outline-none"
+            className="text-primary p-2 focus:outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <span className="material-symbols-outlined text-3xl">
@@ -108,16 +95,6 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a
-            id="btn-nav-cotizar-mobile"
-            href={`https://wa.me/51961484883?text=${encodeURIComponent(`Hola vi su web LUBRISOLUCIONES, quisiera más información y precios.`)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="bg-primary hover:bg-primary-dim text-white px-10 py-4 mt-4 rounded-xl font-bold transition-all"
-          >
-            Cotizar Proyecto
-          </a>
         </div>
       )}
     </nav>
