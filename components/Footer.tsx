@@ -49,10 +49,18 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                className="text-on-surface-variant hover:text-secondary transition-colors   inline-block"
+                className="text-on-surface-variant hover:text-secondary transition-colors inline-block"
                 href="/terminos"
               >
                 Términos y condiciones
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-on-surface-variant hover:text-secondary transition-colors inline-block"
+                href="/cookies"
+              >
+                Política de cookies
               </Link>
             </li>
           </ul>

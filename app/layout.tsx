@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CookieBanner from "../components/CookieBanner";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
@@ -94,6 +95,7 @@ export default function RootLayout({
         <main className="flex-grow flex flex-col">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <CookieBanner />
         <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_OD!} />
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID!} />
       </body>
